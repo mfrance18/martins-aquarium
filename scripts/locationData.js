@@ -1,14 +1,22 @@
+export const getLocation = () => {
+    return locations
+}
+
 const locations = [
     {
-        location: "Australia"
+        name: "Australia",
+        image: "australia.jpeg"
     },
     {
-        location: "Florida"
+        name: "Florida",
+        image: "florida.jpg"
     },
     {
-        location: "Africa"
+        name: "Africa",
+        image: "Africa.jpeg"
     },
     {
-        location: "Mexico"
+        name: "Mexico",
+        image: "mexico.jpg"
     }
 ]

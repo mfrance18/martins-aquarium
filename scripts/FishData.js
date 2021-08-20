@@ -149,7 +149,7 @@ const fishCollection = [
         harvestLocation: "Australia"
     },
     {
-        name: "nile tilapia",
+        name: "Nile Tilapia",
         food: "krill",
         image: "crazy-fish.jpeg",
         species: "tilapia",
