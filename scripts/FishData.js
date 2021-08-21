@@ -38,7 +38,7 @@ const fishCollection = [
         species: "Clown",
         length: 3,
         waterType: "Salt-water",
-        harvestlocation: "Florida"
+        harvestLocation: "Florida"
     },
     {
         name: "Don Julio",
@@ -107,7 +107,7 @@ const fishCollection = [
         name: "Bruce",
         food: "not fish",
         image: "Bruce.jpg",
-        species: "greatWhite",
+        species: "Great White",
         length: 130,
         waterType: "salt",
         harvestLocation: "Sydney"
@@ -156,6 +156,15 @@ const fishCollection = [
         length: 8,
         waterType: "Fresh",
         harvestLocation: "North Africa"   
+    },
+    {
+    name: "Dale",
+    food: "whales",
+    image: "greatwhite.jpg",
+    species: "Great White",
+    length: 130,
+    waterType: "salt",
+    harvestLocation: "Sydney"
     }
 ]
 

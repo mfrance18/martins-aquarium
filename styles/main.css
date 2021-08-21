@@ -8,7 +8,8 @@ header{
 	display: flex;
 	flex-wrap: nowrap;
 	align-items: center;
-	background-color: aqua
+	background: linear-gradient(to right, #66ffff 0%, #ff9933 100%);
+	border-bottom:solid pink 15px;
 }
 
 header h1{
@@ -17,7 +18,6 @@ header h1{
 	text-align: left;
 	padding: 0 2em;
 	font-size: 1.5em;
-
 }
 
 .main-container{
@@ -58,15 +58,23 @@ nav a:active {
 
 .fish-container{
 	display: flex;
+	margin: 1em 0;
+	display: flex;
+	width: 100%;
 }
 
 .fishList{
 	display: flex;
 	flex-wrap: wrap;
-	justify-content: space-evenly;	
+	justify-content: center;	
 }
 .fish-card {
 	background-color: lightcyan;
+	margin: .5em;
+	max-width: 200px;
+}
+
+.quote-section{
 	margin: .5em;
 	max-width: 200px;
 }
@@ -98,9 +106,9 @@ margin-left: 20px;
 }
 
 .tips-content{
-	width: 30%;
-	border:solid darkblue 15px;
-	background-image: linear-gradient(90deg,aqua,lightgreen);
+	width: 20%;
+	border-left:solid pink 15px;
+	background: linear-gradient(to bottom, #ff9933 0%, #66ffff 100%);;
 }
 
 .tips {
@@ -114,18 +122,20 @@ margin-left: 20px;
 	list-style: circle;
 }
 
-.location-container{
-	margin: 1em 0;
-	display: flex;
-	width: 80%;
-}
 
 .location {
-	margin: 1em 0;
 	display: flex;
-	width: 80%;
+	margin: 1em 0;
+	width: 100%;
 }
 
-.locTitle h1{
+.sectionTitles h1{
 	font-size: 30px;
+}
+
+.quote{
+	display: flex;
+	flex-direction: column;
+	margin: 1em 0;
+	width: 100%;
 }
