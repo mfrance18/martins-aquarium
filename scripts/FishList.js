@@ -1,16 +1,26 @@
-import { getFish } from "./FishData.js";
+// import { getFish } from "./FishData.js";
 import { Fish } from "./Fish.js";
-export const FishList = () => {
+import { getMostHolyFish } from "./FishData.js";
+import { getSoldierFish } from "./FishData.js";
+import { getUnworthy } from "./FishData.js";
 
-    // Get a reference to the `<section class="fishList">` element
+export const FishList = () => {
+    const holyFish = getMostHolyFish()
+    addFishToDom(holyFish)
+    const soldierFish = getSoldierFish()
+    addFishToDom(soldierFish)
+     const unWorthy = getUnworthy()
+     addFishToDom(unWorthy)
+}
+
+const addFishToDom = (arrayOfFish) => {
+
     const contentElement = document.querySelector(".fishList")
-    const allFishes = getFish()
-  
+
     let fishHTMLRepresentation = ""
-    
-    for (const item of allFishes) {
-        fishHTMLRepresentation += Fish(item)
+
+    for (const oneFishObject of arrayOfFish) {
+        fishHTMLRepresentation += Fish(oneFishObject)
     }
-    // Add to the existing HTML in the content element
     contentElement.innerHTML += fishHTMLRepresentation
 }

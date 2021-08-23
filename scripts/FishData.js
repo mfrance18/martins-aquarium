@@ -3,6 +3,44 @@ export const getFish = () => {
     return fishCollection
 }
 
+export const getMostHolyFish = () => {
+    // 3, 6, 9, 12, etc... fish
+    const holyFishArray = []
+
+    for (const fish of fishCollection) {
+        if (fish.length % 3 === 0) {
+            holyFishArray.push(fish)
+        }
+    }
+
+    return holyFishArray
+}
+
+export const getSoldierFish = () => {
+    const soldiersArray = []
+
+    for (const fishObj of fishCollection) {
+        if (fishObj.length % 5 === 0) {
+            soldiersArray.push(fishObj)
+        }
+    }
+    return soldiersArray
+}
+
+export const getUnworthy = () => {
+
+    const unworthyArray = []
+
+    for (const fishLength of fishCollection) {
+        if (!(fishLength.length % 3 === 0 || fishLength.length % 5 === 0)) {
+            unworthyArray.push(fishLength)
+        }
+
+    }
+    return unworthyArray
+}
+
+
 const fishCollection = [
     {
         name: "Bart",
@@ -55,7 +93,7 @@ const fishCollection = [
         image: "yellowbluefish.jpeg",
         species: "Siamese algae eater",
         length: 5,
-        waterType: "salt", 
+        waterType: "salt",
         harvestLocation: "Puerto Rico"
     },
     {
@@ -86,14 +124,14 @@ const fishCollection = [
         harvestLocation: "Ohio"
     },
     {
-        name: "doctor fish",
+        name: "Doctor Fish",
         food: "biofilm ",
         image: "bluefish.jpg",
         species: "Tinca tinca",
         length: 3.9,
         waterType: "Fresh Water",
         harvestLocation: "Massachusetts"
-    } ,
+    },
     {
         name: "Beast",
         food: "Shrimp",
@@ -155,16 +193,16 @@ const fishCollection = [
         species: "tilapia",
         length: 8,
         waterType: "Fresh",
-        harvestLocation: "North Africa"   
+        harvestLocation: "North Africa"
     },
     {
-    name: "Dale",
-    food: "whales",
-    image: "greatwhite.jpg",
-    species: "Great White",
-    length: 130,
-    waterType: "salt",
-    harvestLocation: "Sydney"
+        name: "Dale",
+        food: "whales",
+        image: "greatwhite.jpg",
+        species: "Great White",
+        length: 130,
+        waterType: "salt",
+        harvestLocation: "Sydney"
     }
 ]
 
