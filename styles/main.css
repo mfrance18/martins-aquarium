@@ -70,7 +70,7 @@ nav a:active {
 .fishList{
 	display: flex;
 	flex-wrap: wrap;
-	justify-content: center;	
+	justify-content: space-evenly;	
 }
 .fish-card {
 	background-color: lightcyan;

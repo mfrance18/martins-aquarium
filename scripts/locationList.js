@@ -1,4 +1,4 @@
-import { getLocation } from "./LocationData.js";
+import { getLocation } from "./locationData.js";
 import { Location } from "./location.js";
 export const LocationList = () => {
 
